@@ -1,18 +1,31 @@
 import React from 'react';
 import classes from './Drawer.module.css'
 import BackDrop from "../../UI/BackDrop/BackDrop";
+import {NavLink} from "react-router-dom";
 
 const links = [
-    1, 2, 3
+    {to: '/', label: 'Список'},
+    {to: '/auth', label: 'Авторизация'},
+    {to: '/quiz-creator', label: 'Создать тест'}
 ]
 
 const Drawer = props => {
+
+    const clickHandler = () => {
+
+    }
+
     const renderLinks = () => {
         return links.map((link, index) => {
             return (
                 <li key={index}>
-                    <a>{link}</a>
-
+                    <NavLink
+                        to={link.to}
+                        // activeClassName={classes.active}
+                        onClick={()=>props.onClose()}
+                    >
+                        {link.label}
+                    </NavLink>
                 </li>
             )
         })
@@ -35,4 +48,4 @@ const Drawer = props => {
     )
 }
 
-export default Drawer;
+export default Drawer
