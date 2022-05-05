@@ -34,7 +34,7 @@ const Quiz = props => {
     const [isFinished, setIsFinished] = useState(false)
     const [results, setResults] = useState({})
 
-    const onAnswerClickHandler = (answerId) => {
+    const onAnswerClickHandler = answerId => {
 
         const question = quiz[activeQuestion]
 
