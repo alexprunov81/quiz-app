@@ -5,7 +5,7 @@ import Button from '../../components/UI/Button/Button'
 import Input from '../../components/UI/Input/Input'
 
 const Auth = () => {
-
+    const [formValid, setFormValid] = useState(false)
     const [formControls, setFormControls] = useState({
         email: {
             value: '',
@@ -57,7 +57,7 @@ const Auth = () => {
         }
 
         if (validation.email) {
-           isValid = is.email(value) && isValid
+            isValid = is.email(value) && isValid
         }
 
         if (validation.minLength) {
