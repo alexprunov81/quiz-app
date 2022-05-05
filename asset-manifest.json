@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alexprunov81/quiz-app/static/css/main.f9dcf769.css",
+    "main.js": "/alexprunov81/quiz-app/static/js/main.f87606a9.js",
+    "index.html": "/alexprunov81/quiz-app/index.html",
+    "main.f9dcf769.css.map": "/alexprunov81/quiz-app/static/css/main.f9dcf769.css.map",
+    "main.f87606a9.js.map": "/alexprunov81/quiz-app/static/js/main.f87606a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9dcf769.css",
+    "static/js/main.f87606a9.js"
+  ]
+}
